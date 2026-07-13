@@ -11,3 +11,4 @@ uploads/*
 *.db
 .coverage
 .pytest_cache/
+.env.example
