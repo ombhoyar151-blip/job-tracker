@@ -1,4 +1,5 @@
-const API_HOST = import.meta.env.VITE_API_URL || ''
+const rawHost = import.meta.env.VITE_API_URL || ''
+const API_HOST = rawHost ? (rawHost.startsWith('http') ? rawHost : `https://${rawHost}`) : ''
 const BASE_URL = `${API_HOST}/api`
 
 async function getToken() {
