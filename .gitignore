@@ -1,14 +1,38 @@
+# Dependency directories
 node_modules/
 dist/
 build/
+
+# Environment files
 .env
-*.pyc
+.env.local
+.env.production
+
+# Python caches and environments
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 .venv/
 venv/
+ENV/
+env/
+
+# Uploads & Storage
 uploads/*
 !uploads/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
 *.db
+*.sqlite3
+
+# Testing & Coverage
 .coverage
 .pytest_cache/
-.env.example
+coverage/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
